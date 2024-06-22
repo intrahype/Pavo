@@ -2,6 +2,7 @@
 #import human-readable exif tags
 import PIL
 
+from exif import Image as ExifImage
 from PIL import Image as PillowImage
 from PIL import ExifTags
 
@@ -10,6 +11,13 @@ images = []
 
 #add function to add images to dict
 
+PILLOW_TAGS = [
+
+]
+
+EXIF_TAGS = [
+    
+]
 #function to iterate through photos and pull metadata
 for img in images:
     print(img)
