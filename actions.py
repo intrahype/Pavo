@@ -18,6 +18,7 @@ PILLOW_TAGS = [
 EXIF_TAGS = [
     
 ]
+
 #function to iterate through photos and pull metadata
 for img in images:
     print(img)
@@ -31,4 +32,5 @@ for img in images:
             value = img_exif[tag]
         except:
             continue
+        #add code here to take exif data for input form
         print("{}: {}".format(english_tag, value))
