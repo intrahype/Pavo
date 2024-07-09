@@ -1,10 +1,8 @@
-#import PIL and Pillow Libraries
-#import human-readable exif tags
+#import PIL and exif tags
 import PIL
 
-from exif import Image as ExifImage
 from PIL import Image as PillowImage
-from PIL import ExifTags
+from PIL.Exiftags import TAGS
 
 #create empty dict for images to populate
 images = []
